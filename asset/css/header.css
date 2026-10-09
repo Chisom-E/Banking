@@ -12,12 +12,12 @@
     height: 60px;
     gap: 20px;
     border-bottom: 1px solid var(--border);
-    position: fixed;
+    position: sticky;
     top: 0px;
     left: 0px;
     width: 100%;
     backdrop-filter: blur(5px);
-    z-index: 100;
+    z-index: 1000;
 }
 .logoContainer{
     color: var(--foregrand);
