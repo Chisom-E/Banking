@@ -1,0 +1,72 @@
+@import "./style.css";
+@import "./header.css";
+@import "./footer.css";
+.pricingSec{
+    margin-top: 50px;
+/* padding: 80px 20px; */
+text-align: center;
+}
+.first{
+    color: var(--primary);
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+.pricing h1{
+    color: var(--foregrand);
+    font-size: 3rem;
+}
+.second{
+    color: var(--muted-foreground);
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.pricingcardsCont{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    width: 90%;
+    gap: 20px;
+    margin: 80px auto;
+}
+.priceCards{
+    background-color: var(--bgcard);
+    border-radius: 20px;
+     text-align: left;
+     padding: 30px;
+}
+.agent{
+    background-color: var(--primaryT);
+}
+.priceCards h1{
+    color: var(--primary);
+    padding: opx;
+}
+.priceCards h4{
+    color: var(--foregrand);
+}
+.priceCards ul{
+    color: var(--muted-foreground);
+    list-style: none;
+    margin: 20px 0;
+}
+.priceCards li{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.priceCards i{
+    color: var(--primary);
+}
+.priceCards button{
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    height: 40px;
+    background-color: var(--primary);
+    color: var(--black);
+    border-radius: 10px;
+}
+@media screen and (max-width:1020px) {
+    .pricingcardsCont{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,65 @@
+@import "./style.css";
+@import "./header.css";
+@import "./footer.css";
+.developers{
+    width: 100%;
+    margin-top: 100px;
+padding: 80px;
+}
+.first{
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+
+}
+h1{
+    color: var(--foregrand);
+    max-width: 760px;
+    font: size 3rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.second{
+    color: var(--muted-foreground);
+    max-width: 760px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.devcardsCont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 60px auto;
+    gap: 20px;
+
+}
+.devCards{
+    background-color: var(--bgcard);
+    padding: 35px;
+    border-radius: 20px;
+    /* height: 400px; */
+}
+.devCards .fas{
+    color: var(--primary);
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+.devCards h2{
+    color: var(--foregrand);
+    margin-bottom: 20px;
+}
+.devCards p{
+    color: var(--muted-foreground);
+    line-height: 1.5rem;
+    margin-top: 10px;
+}
+@media screen and (max-width:1018px) {
+    .devcardsCont{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:769px) {
+    .devcardsCont{
+        grid-template-columns: 1fr;
+    }
+}

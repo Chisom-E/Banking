@@ -1,0 +1,465 @@
+@import "./style.css";
+@import "./header.css";
+@import "./footer.css";
+.main{
+margin-top: 60px;
+padding: 20px 20px;
+
+}
+.heroContainer{
+display: grid;
+
+}
+.leftHero{
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding-top: 50px;
+
+}
+.heroTitle{
+color: var(--primary);
+font-size: 12px;
+background-color: var(--primaryT);
+padding: 10px 20px;
+border-radius: 10px;
+display: flex;
+gap: 20px;
+width: fit-content;
+border: 1px solid var(--border);
+}
+.heroSubtitle{
+color: var(--foregrand);
+font-size: 2.5rem;
+font-weight: bolder;
+font-family: Arial, Helvetica, sans-serif;
+}
+.heroDescription{
+font-size: 16px;
+color: var(--muted-foreground);
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+.ctaContainer{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.heroCTA{
+padding: 10px 100px;
+border: 1px solid var(--border);
+border-radius: 10px;
+display: flex;
+align-items: center;
+gap: 20px;
+min-width: fit-content;
+display: block;
+flex: 1;
+transition: all 500ms linear;
+cursor: pointer;
+}
+.explore:hover {
+background-color: var(--primary);
+color: black;
+}
+.heroCTA{
+
+}
+.enterpriseConsole{
+background-color: var(--primary);
+color: black;
+}
+.rightHero{
+ padding: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.rightHero .card{
+    max-width: fit-content;
+    min-width: 250px;
+    width: 100%;
+    /* height: 300px; */
+}
+@media screen and (min-width:1020px) {
+    .heroContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.card{
+    padding: 30px 20px;
+    position: relative;
+}
+.cardtitle{
+color: var(--primary);
+font-family: monospace;
+letter-spacing: 3px;
+font-size: 0.8rem;
+}
+.cardsubtitleCont{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 10px;
+margin-bottom: 30px;
+}
+.fa-credit-card{
+    color: var(--primary);
+    font-size: 1.4rem;
+}
+.cardSubtitle{
+font-size: 1.5rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+color: var(--foregrand);
+}
+.operationalBalanceCont{
+background-color: var(--primaryT);
+color: var(--foregrand);
+border-radius: 10px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.ope{
+color: var(--foregrand);
+font-size: 0.6rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.opeAmount{
+color: var(--foregrand);
+font-size: 1.8rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+font-weight: bolder;
+}
+.todaySecCont{
+display: flex;
+gap: 10px;
+margin-top: 10px;
+}
+.todaycheck{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--backgroundT);
+    border: 1px solid var(--border);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.first h6{
+color: var(--foregrand);
+font-size: 0.6rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.second h6{
+color: var(--foregrand);
+font-size: 0.6rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.first p{
+    color: var(--emerald);
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+.second p{
+    color: var(--primary);
+font-size: 1.2rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+font-weight: bold;
+text-wrap: nowrap;
+}
+.abchild{
+display: flex;
+position: absolute;
+bottom: -30px;
+left: -30px;
+padding: 10px;
+gap: 10px;
+background-color: var(--bgcard);
+border-radius: 10px;
+align-items: center;
+}
+.fa-tick, .fa-snowflake-o, .fa-microchip{
+    background-color: var(--emeraldT);
+    color: var(--emerald);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.providercallback{
+    color: var(--foregrand);
+    
+
+}
+.boxContainer{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+    margin-top: 100px;
+}
+.cards{
+    height: 100px;
+    width: 100%;
+    background-color: var(--bgcard);
+    border-radius: 20px;
+     border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+@media screen and (max-width:1020px) {
+    .boxContainer{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:768px) {
+    .boxContainer{
+        grid-template-columns: 1fr;
+    }
+}
+.notes{
+    color: var(--muted-foreground);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title{
+    color: var(--foregrand);
+    font-weight: bolder;
+}
+h3{
+    color: var(--primary);
+    margin-top: 60px;
+  text-align: center;
+  word-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.financial{
+    color: var(--foregrand);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 20px;
+    text-align: center;
+}
+.experience{
+    color: var(--muted-foreground);
+    font-size: 0.9rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+text-align: center;
+margin-top: 20px;
+}
+.paymentCards{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+    margin-top: 80px;
+    gap: 20px;
+}
+.payment{
+    height:180px;
+    width: 100%;
+    background-color: var(--bgcard);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--border); 
+}
+.fa-thin fa-wallet{
+    background-color: var(--primary);
+    font-size: 1.4rem;
+}
+.wallet{
+    color: var(--foregrand);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.transfer{
+    color: var(--foregrand);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.bills{
+    color: var(--foregrand);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.admin{
+    color: var(--foregrand);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.para{
+    color: var(--muted-foreground);
+    font-size: 0.8rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    word-spacing: 3px;
+}
+@media screen and (max-width:1020px) {
+    .paymentCards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:768px) {
+    .paymentCards{
+        grid-template-columns: 1fr;
+    }
+}
+.operationContainer{
+display: flex;
+   gap: 50px;
+   flex-wrap: wrap;
+   padding-top: 50px;
+   padding: 50px 20px;
+   align-items: center;
+   justify-content: center;
+}
+.opTextCont{
+display: flex;
+flex-direction: column;
+gap: 20px;
+/* min-width: 500px; */
+flex: 1;
+max-width: 700px;
+
+}
+.opTitle{
+    color: var(--primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.opSubTitle{
+    color: var(--foregrand);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: left;
+}
+.opCardCont{
+   max-width: 700px;
+   flex: 1;
+   min-width: 500px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.opcard{
+
+}
+.opCardNum{
+background-color: var(--primaryT);
+height: 50px;
+width: 50px;
+border-radius: 50%;
+color: var(--primary);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+font-weight: bold;
+}
+.opCardTextCont{
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.opCardTitle{
+color: var(--foregrand);
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 1.2rem;
+font-weight: bold;
+}
+.opCardDescription{
+color: var(--foregrand);
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 0.8rem;
+}
+@media screen and (max-width: 600px) {
+    .opCardTextCont{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .opCardCont{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+.fintechUsersCont{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* gap: 40px; */
+}
+.leftChild i.fas{
+    height: 70px;
+    width: 70px;
+    border-radius: 30px;
+    background-color: var(--primary);
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.leftChild h2{
+    color: var(--foregrand);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.leftChild p{
+    color: var(--muted-foreground);
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.rightChild{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+align-content: center;
+}
+.rightChild .cards{
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.rightChild .cards .fas{
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+.rightChild .cards h5{
+color: var(--foregrand);
+font-size: 1.2rem;
+}
+@media screen and (max-width:1000px) {
+    .fintechUsersCont {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:600px) {
+    .rightChild {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,69 @@
+@import "./style.css";
+@import "./header.css";
+@import "./footer.css";
+.services{
+   margin-top: 100px;
+padding: 80px 20px;
+text-align: center;
+}
+.first{
+    color: var(--primary);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.services h1{
+    color: var(--foregrand);
+    font-size: 2.5rem;
+}
+.gt{
+    color: var(--muted-foreground);
+    margin-top: 10px;
+    font-size: 18px;
+}
+.servicescardCont{
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   width: 90%;
+   margin: auto;
+}
+.cards{
+    background-color: var(--bgcard);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    /* height: 200px; */
+    /* width: 100%; */
+}
+.cards h2{
+    color: var(--foregrand);
+}
+.cards p{
+    color: var(--muted-foreground);
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.iconContainer{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryT);
+    margin-bottom: 10px;
+}
+.iconContainer  .fas{
+    color: var(--primary);
+    
+}
+@media screen and (max-width:1018px) {
+    .servicescardCont{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:766px) {
+   .servicescardCont{
+    grid-template-columns: 1fr;
+   }
+}
