@@ -28,8 +28,12 @@ padding-top: 50px;
 color: var(--primary);
 font-size: 12px;
 background-color: var(--primaryT);
+height: 30px;
+width: 30px;
+justify-content: center;
+align-items: center;
 padding: 10px 20px;
-border-radius: 10px;
+border-radius: 15px;
 display: flex;
 gap: 20px;
 width: fit-content;
@@ -45,33 +49,28 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 16px;
 color: var(--muted-foreground);
 font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
+font-weight: 500;
+line-height: 1.5rem;
 }
 .ctaContainer{
     display: flex;
-    width: 100%;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 .heroCTA{
-padding: 10px 100px;
 border: 1px solid var(--border);
 border-radius: 10px;
 display: flex;
 align-items: center;
+height: 50px;
+min-width: 200px;
 gap: 20px;
-min-width: fit-content;
-display: block;
-flex: 1;
+font-size: 1rem;
+justify-content: center;
 transition: all 500ms linear;
 cursor: pointer;
 }
 .explore:hover {
 background-color: var(--primary);
 color: black;
-}
-.heroCTA{
-
 }
 .enterpriseConsole{
 background-color: var(--primary);
@@ -461,5 +460,12 @@ font-size: 1.2rem;
     }
     .paymentCards{
         grid-template-columns: 1fr;
+    }
+    .ctaContainer{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .heroCTA{
+        width: 400px;
     }
 }
