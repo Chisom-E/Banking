@@ -37,7 +37,7 @@ border: 1px solid var(--border);
 }
 .heroSubtitle{
 color: var(--foregrand);
-font-size: 2.5rem;
+font-size: 2rem;
 font-weight: bolder;
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -45,23 +45,24 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 16px;
 color: var(--muted-foreground);
 font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
+font-weight: 400;
 }
 .ctaContainer{
     display: flex;
     width: 100%;
+    margin: auto;
     gap: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .heroCTA{
-padding: 10px 60px;
+padding: 12px 100px;
 border: 1px solid var(--border);
 border-radius: 10px;
 display: flex;
 align-items: center;
 gap: 20px;
 min-width: fit-content;
-display: block;
+/* display: block; */
 flex: 1;
 transition: all 500ms linear;
 cursor: pointer;
@@ -69,9 +70,6 @@ cursor: pointer;
 .explore:hover {
 background-color: var(--primary);
 color: black;
-}
-.heroCTA{
-
 }
 .enterpriseConsole{
 background-color: var(--primary);
@@ -460,6 +458,10 @@ font-size: 1.2rem;
     .boxContainer{
         grid-template-columns: 1fr;
     }
-    
-    
+   .ctaContainer{
+    flex-direction: column;
+   }
+   .heroCTA{
+     padding: 12px 150px;
+   }
 }
