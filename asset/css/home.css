@@ -55,7 +55,7 @@ font-weight: 400;
     flex-wrap: wrap;
 }
 .heroCTA{
-padding: 12px 80px;
+padding: 12px 60px;
 border: 1px solid var(--border);
 border-radius: 10px;
 display: flex;
@@ -458,5 +458,10 @@ font-size: 1.2rem;
     .boxContainer{
         grid-template-columns: 1fr;
     }
-   
+   .paymentCards{
+    grid-template-columns: 1fr;
+   }
+   .ctaContainer{
+    /* flex-direction: column; */
+   }
 }
