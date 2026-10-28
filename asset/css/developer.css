@@ -4,13 +4,16 @@
 .developers{
     width: 100%;
     margin-top: 100px;
-padding: 80px;
+padding: 60px;
+border-bottom: 1px solid var(--border) ;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .first{
     color: var(--primary);
     font-size: 1.5rem;
     margin-bottom: 15px;
-
 }
 h1{
     color: var(--foregrand);
@@ -18,12 +21,14 @@ h1{
     font: size 3rem;
     font-weight: bolder;
     margin-bottom: 20px;
+    text-align: center;
 }
 .second{
     color: var(--muted-foreground);
     max-width: 760px;
     font-size: 1.2rem;
     line-height: 1.5rem;
+    text-align: center;
 }
 .devcardsCont{
     display: grid;
@@ -37,12 +42,13 @@ h1{
     background-color: var(--bgcard);
     padding: 35px;
     border-radius: 20px;
-    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
 }
 .devCards .fas{
     color: var(--primary);
     margin-bottom: 30px;
-    font-size: 1.8rem;
+    font-size: 20px;
 }
 .devCards h2{
     color: var(--foregrand);
@@ -51,7 +57,8 @@ h1{
 .devCards p{
     color: var(--muted-foreground);
     line-height: 1.5rem;
-    margin-top: 10px;
+    font-size: 18px;
+    /* margin-top: 10px; */
 }
 @media screen and (max-width:1018px) {
     .devcardsCont{
