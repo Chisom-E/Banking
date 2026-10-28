@@ -2,19 +2,14 @@
 @import "./header.css";
 @import "./footer.css";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .main{
 margin-top: 60px;
 padding: 20px 20px;
 
 }
 .heroContainer{
-display: grid;
-grid-template-columns: 1fr 1fr;
+display: flex;
+
 gap: 30px;
 }
 .leftHero{
@@ -28,7 +23,7 @@ padding-top: 50px;
 color: var(--primary);
 font-size: 12px;
 background-color: var(--primaryT);
-padding: 10px 10px;
+padding: 10px 20px;
 border-radius: 10px;
 display: flex;
 gap: 20px;
@@ -55,7 +50,7 @@ font-weight: 400;
     flex-wrap: wrap;
 }
 .heroCTA{
-padding: 12px 60px;
+padding: 10px 60px;
 border: 1px solid var(--border);
 border-radius: 10px;
 display: flex;
@@ -76,10 +71,11 @@ background-color: var(--primary);
 color: black;
 }
 .rightHero{
- /* padding: 20px; */
+ padding: 20px;
  display: flex;
  align-items: center;
  justify-content: center;
+ margin-bottom: 70px;
 }
 .rightHero .card{
     max-width: fit-content;
@@ -433,6 +429,7 @@ font-size: 1.2rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .heroContainer{
+        display: grid;
         grid-template-columns: 1fr;
     }
     .fintechUsersCont {
@@ -460,8 +457,5 @@ font-size: 1.2rem;
     }
    .paymentCards{
     grid-template-columns: 1fr;
-   }
-   .ctaContainer{
-    /* flex-direction: column; */
    }
 }
