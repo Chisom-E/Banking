@@ -8,8 +8,8 @@ padding: 20px 20px;
 
 }
 .heroContainer{
-display: flex;
-
+display: grid;
+grid-template-columns: 1fr 1fr;
 gap: 30px;
 }
 .leftHero{
@@ -429,7 +429,6 @@ font-size: 1.2rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .heroContainer{
-        display: grid;
         grid-template-columns: 1fr;
     }
     .fintechUsersCont {
@@ -457,5 +456,8 @@ font-size: 1.2rem;
     }
    .paymentCards{
     grid-template-columns: 1fr;
+   }
+   .ctaContainer{
+    /* flex-direction: column; */
    }
 }

@@ -3,15 +3,17 @@
 @import "./footer.css";
 
 .enterpriseSec{
-    width: 100%;
+
  background-color: var(--black);
  border: 1px solid var(--border);
 }
 .hero{
-    /* width: 90%; */
-    padding: 80px;
-    margin-top: 50px;
 
+    padding-left: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: auto;
+  
 }
 .enterprise{
    display: inline-flex;
@@ -33,11 +35,11 @@
     color: var(--foregrand);
     max-width: 760px;
     font-size: 3rem;
-    font-weight: bolder;
+    
     margin-bottom: 20px;
 }
 .notes{
-    max-width: 760px;
+   max-width: 760px;
     color: var(--muted-foreground);
     font-size: 20px;
     line-height: 1.8rem;
@@ -77,4 +79,5 @@
    .enterprisecardsCont{
     grid-template-columns: 1fr;
    }
+   
 };
