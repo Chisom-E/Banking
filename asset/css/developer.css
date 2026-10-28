@@ -2,9 +2,9 @@
 @import "./header.css";
 @import "./footer.css";
 .developers{
-    width: 100%;
-    margin-top: 100px;
-padding: 60px;
+width: 100%;
+ margin-top: 60px;
+padding: 40px 20px;
 border-bottom: 1px solid var(--border) ;
 display: flex;
 flex-direction: column;
@@ -14,17 +14,20 @@ align-items: center;
     color: var(--primary);
     font-size: 1.5rem;
     margin-bottom: 15px;
+    text-align: center;
 }
 h1{
     color: var(--foregrand);
+    width: 100%;
     max-width: 760px;
-    font: size 3rem;
+    font-size: 3rem;
     font-weight: bolder;
-    margin-bottom: 20px;
+     margin: 0 0 20px;
     text-align: center;
 }
 .second{
     color: var(--muted-foreground);
+    width: 100%;
     max-width: 760px;
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -66,6 +69,17 @@ h1{
     }
 }
 @media screen and (max-width:769px) {
+    .developers{
+        margin-top: 40px;
+        padding: 30px 20px;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .second{
+        font-size: 1.1rem;
+        max-width: 420px;
+    }
     .devcardsCont{
         grid-template-columns: 1fr;
     }
