@@ -50,12 +50,13 @@ h1{
 }
 .devCards .fas{
     color: var(--primary);
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-size: 20px;
 }
 .devCards h2{
     color: var(--foregrand);
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 .devCards p{
     color: var(--muted-foreground);

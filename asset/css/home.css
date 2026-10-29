@@ -5,7 +5,7 @@
 .main{
 margin-top: 60px;
 padding: 20px 20px;
-
+overflow: hidden;
 }
 .heroContainer{
 display: grid;
